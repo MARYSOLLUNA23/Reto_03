@@ -1,0 +1,131 @@
+<!-- MAR Y SOL LUNA QUIJADA -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Fjalla+One&family=Kanit&family=Lobster&family=Nunito+Sans&family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" >
+        <title>RETO 03|| PIANO</title>
+        <link rel="icon" type="image" href="img/fridaLogo.jpg">
+        <script src="javaScript/main.js" defer></script>
+    </head>
+    <body>
+        <div id="contBody">
+            <div id="contPiano">
+                <header id="header">
+                    <h1>FRIDA KAHLO MUJER QUE MARCO HISTORIA EN MÉXICO</h1>
+                    <h3>Artista 100% mexicana (1907/07/06 - 1954/07/13)</h3>
+                    <br><br>
+                    </header>
+        
+                    <nav id="menu">
+                        <a href="index.html">Inicio</a>
+                        <a href="museofk.html">Museo de Frida</a>
+                        <a href="artefk.html">Obras de Arte</a>
+                        <a href="retoPiano.html">Piano</a>
+                    </nav>
+        
+                    <div id="contenedor">
+                        <aside>
+                            <h1>Reto 2: PIANO</h1>
+                            <h3 class="text">
+                              Hola! Mi nombre es <span id="nombre"></span>, tengo
+                              <span id="age"></span> años y <span id="likesMusic"></span>. Este es mi
+                              primer proyecto con Javascript
+                            </h3>
+                        </aside>
+                          <section id="contPiano" class="piano">
+                            <div data-note="C" class="key white"></div>
+                            <div data-note="Db" class="key black"></div>
+                            <div data-note="D" class="key white" ></div>
+                            <div data-note="Eb" class="key black"></div>
+                            <div data-note="E" class="key white" ></div>
+                            <div data-note="F" class="key white" ></div>
+                            <div data-note="Gb" class="key black"></div>
+                            <div data-note="G" class="key white" ></div>
+                            <div data-note="Ab" class="key black"></div>
+                            <div data-note="A" class="key white" ></div>
+                            <div data-note="Bb" class="key black"></div>
+                            <div data-note="B" class="key white" ></div>
+                            <div data-note="H" class="key white" ></div>
+                            <div data-note="Hh" class="key black"></div>
+                            <div data-note="I" class="key white" ></div>
+                            <div data-note="J" class="key black"></div>
+                            <div data-note="Jj" class="key white"></div>
+                          </section>
+                          <div class="btnPers">
+                            <h3>Personaliza el piano:</h3>
+                            <button id="personalizarRosa">ROSA</button>
+                            <button id="personalizarAzul">AZUL</button>
+                            <button id="personalizarAmarillo">AMARILLO</button>
+                            <button id="personalizarBlanco">BLANCO</button>
+                          </div>
+                          <audio id="C" src="notes/C.mp3"></audio>
+                          <audio id="Db" src="notes/Db.mp3"></audio>
+                          <audio id="D" src="notes/D.mp3"></audio>
+                          <audio id="Eb" src="notes/Eb.mp3"></audio>
+                          <audio id="E" src="notes/E.mp3"></audio>
+                          <audio id="F" src="notes/F.mp3"></audio>
+                          <audio id="Gb" src="notes/Gb.mp3"></audio>
+                          <audio id="G" src="notes/G.mp3"></audio>
+                          <audio id="Ab" src="notes/Ab.mp3"></audio>
+                          <audio id="A" src="notes/A.mp3"></audio>
+                          <audio id="Bb" src="notes/Bb.mp3"></audio>
+                          <audio id="B" src="notes/B.mp3"></audio>
+                          <audio id="H" src="notes/C.mp3"></audio>
+                          <audio id="Hh" src="notes/Db.mp3"></audio>
+                          <audio id="I" src="notes/D.mp3"></audio>
+                          <audio id="J" src="notes/Eb.mp3"></audio>
+                          <audio id="Jj" src="notes/E.mp3"></audio>
+                          <br><br>
+                    </div>
+                    <footer id="footer">
+                        <div class="footerdiv">
+                            <h2>Siguenos en nuestras redes:</h2>
+                            <h3>
+                                <div>
+                                <span><i class="lni lni-facebook-original"></i><a href="https://es-la.facebook.com/fridakahlo/"> Facebook Frida Kahlo</a></span>
+                                <span><i class="lni lni-instagram-original"></i><a href="https://www.instagram.com/fridakahlo/?hl=es-la"> Instagram @FridaKahlo</a></span>
+                                <span><i class="lni lni-spotify-original"></i><a href="https://www.youtube.com/watch?v=YneMootqnD0"> Escucha el podcat</a></span>
+                                <span><i class="lni lni-whatsapp"></i> Envia mensaje al 8745362819 </span>
+                                </div>
+                            </h3>
+                        </div>
+                        <div class="footerdiv">
+                            <h2>Contacto</h2>
+                            <div>
+                                <form>
+                                    <label for="contactEmail"> Correo electronico:</label>
+                                    <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+                                    <label for="contactMessage"> Mensaje:</label>
+                                    <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+                                    <label id="formCal"> Danos tu calificación:</label>
+                                    <label><input type="radio" name="calificar" value="Me gusto" id="califGustar"> Me gusto :) </label>
+                                    <label><input type="radio" name="calificar" value="No me gusto" id="califNoGustar"> No me gusto :(</label><br><br>
+                                    <input type="submit" value="Enviar" onclick="enviar()">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footerdiv">
+                            <h2>Otros de mis sitios</h2>
+                            <ul>
+                                <li><a href="./indexClase2.html">Trabajo de la clase 2</a></li>
+                                <li><a href="./indexClase3.html">Trabajo de la clase 3</a></li>
+                                <li><a href="./indexClase4.html">Trabajo de la clase 4</a></li>
+                                <li><a href="./indexClase5.html">Trabajo de la clase 5</a></li>
+                                <li><a href="./reto.html">Reto flex</a></li>
+                                
+                            </ul>
+                        </div>
+                    </footer>
+            </div>
+        </div>
+    </body>
+    <script src="form.js">
+    </script>
+</html>
